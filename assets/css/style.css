@@ -1,0 +1,87 @@
+body {
+    color: black;
+    background: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: 'Ovo', serif;
+    font-size: 20px;
+    padding: 10px
+}
+
+p {  
+    font-family: 'Montserrat', sans-serif;
+    color: #e6e0eb;
+}
+
+
+.title {  
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+}
+
+.level {  
+    color:black;
+}
+
+.button {
+    color:black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    background-color:transparent;
+}
+
+
+.data-button {
+    color:black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    background-color:transparent;
+}
+
+span {
+    
+    background-color:transparent;
+}
+
+input {
+    
+    background-color:transparent;
+}
+
+.card {
+    color:black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    border-style: ridge;
+    border-width: .6px;
+    border-radius: 30px;
+    background-color:#3d3a3a;
+    box-shadow: 2px 2px 1px #515152;
+    padding: 25px;
+}
+
+section {
+    background-color: white;
+}
+
+
+.tile .is-parent {
+    color:black;
+    background: white;
+    border-radius: 10px;
+    font-family: 'Ovo', serif;
+}

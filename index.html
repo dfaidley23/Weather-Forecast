@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5 Day forecast</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+        <h2>weather dashboard</h2>
+    </header>
+
+    <section class="hero is-fullheight">
+        <div class="hero-body is-flex is-flex-direction-row is-justify-content-center is-align-content-center p-2 m-2">
+            <div class="tile is-ancestor is-justify-content-center is-align-content-center">
+                <div class="tile is-3 ">
+                    <article class="tile is-child is-flex is-justify-content-center is-align-content-center p-3 m-3"
+                        id="search">
+                        <div class="content mb-5">
+                            <p class="title ">Search City:</p>
+                            <div class="control" id="city-search">
+                                <input class="input" id="city" type="text" placeholder="Enter City">
+                                </input>
+                                <button type="submit" class="button p-2 m-3">Search</button>
+                            </div>
+                            <div class="is-flex is-flex-direction-columm is-justify-content-center is-align-content-center is-hidden"
+                                id="citySave">
+                                <article
+                                    class="is-flex is-flex-direction-columm is-justify-content-center is-align-content-center is-child">
+                                    <dl class="savedHistoryButtons">
+                                        <dd class="btn buttonContainer"><button class="button data-button is-capitalized"
+                                                type="submit"></button>
+                                        </dd>
+                                    </dl>
+                                </article>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="tile m-5 p-5 is-8 is-multiline is-flex is-justify-content-center is-flex-direction-column is-hidden"
+                    id="currentWeather">
+                    <p class="title city is-capitalized is-flex is-justify-content-center"></p>
+                    <h1 class=" date is-capitalized is-flex is-justify-content-center"></h1>
+                    <article class="tile is-child ">
+                        <div class="card">
+                            <div class="card-content">
+                                <nav class="level">
+                                    <div class="level-item has-text-centered">
+                                        <div>
+                                            <p class="heading is-size-7">Temp<i class="fas fa-temperature-high"></i></p>
+                                            <p class="title" id="temp"></p>
+                                        </div>
+                                    </div>
+                                    <div class="level-item has-text-centered">
+                                        <div>
+                                            <p class="heading is-size-7">Wind <i class="fas fa-wind"></i></p>
+                                            <p class="title" id="wind"></p>
+                                        </div>
+                                    </div>
+                                    <div class="level-item has-text-centered">
+                                        <div>
+                                            <p class="heading is-size-7">Humidity <i class="fas fa-cloud-rain"></i></p>
+                                            <p class="title" id="humidity"></p>
+                                        </div>
+                                    </div>
+                                    <div class="level-item has-text-centered">
+                                        <div>
+                                            <p class="heading is-size-7">UV Index <i class="fas fa-sun"></i></p>
+                                            <p class="title" id="uvi"></p>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <br>
+                        </div>
+                        <br>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+        <section class="tile m-5 p-5 is-multiline is-flex is-justify-content-center is-flex-direction-column is-hidden"
+            id="forecast">
+            <p class="title is-flex is-justify-content-center">5-day Forecast</p>
+            <div class="columns" id="fiveDay">
+
+            </div>
+        </section>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/java/javascript.js"></script>
+</body>
+
+</html>
