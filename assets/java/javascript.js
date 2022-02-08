@@ -95,8 +95,8 @@ submitBtn.addEventListener("click", (event) => {
     });
 });
 
-searchedHistoryButtons.addEventListener("click", (e) => {
-  e.preventDefault();
+searchedHistoryButtons.addEventListener("click", (event) => {
+  event.preventDefault();
 
   let savedCity = "";
 
