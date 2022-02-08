@@ -1,3 +1,4 @@
+// list of constants used
 const userSearchEL = document.querySelector("#user-form");
 const fiveDayForecastContainer = document.querySelector("#forecast");
 const fiveDayForecastEl = document.querySelector("#fiveDay");
@@ -16,6 +17,7 @@ const cityHumidityDisplay = document.querySelector("#humidity");
 const cityUVindexDisplay = document.querySelector("#uvi");
 const cities = [];
 
+// event listener for the submit of the search button that will make a call to the API and retrieve the data and then display it on the screen
 submitBtn.addEventListener("click", (event) => {
   event.preventDefault();
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${citySearchInput.value},840${apiId}&units=Imperial`)
@@ -61,6 +63,7 @@ submitBtn.addEventListener("click", (event) => {
             .map((weatherData) => {
               let icon = weatherData.weather[0].icon;
               let date = moment.unix(weatherData.dt).format("MM-DD-YYYY");
+              // decided to add the return here in an HTML format to paste to the screen with classes added for formatting. Will do the same with project 1 return for MVP goals
               return `<div class="card is-mobile column p-2 m-3">
               <div
                   class="level-item has-text-centered is-flex is-flex-direction-row is-justify-content-center is-align-content-center">
